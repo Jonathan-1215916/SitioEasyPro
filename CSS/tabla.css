@@ -1,0 +1,39 @@
+.tabla-responsive tr:nth-child(odd) {
+    background-color: #f9fafb; /* Color de fondo claro para filas impares */
+  }
+
+  .tabla-responsive th {
+    background-color: #0576e7; /* Color de fondo para encabezados */
+    color: #fff; /* Color de texto blanco para encabezados */
+    text-align: center; /* Centrar el texto en las celdas de encabezado */
+  }
+
+  .tabla-responsive td {
+    border: 1px solid #ddd; /* Bordes finos para las celdas */
+    padding: 8px; /* Espacio de relleno alrededor del texto en las celdas */
+  }
+
+  .tabla-responsive th, .tabla-responsive td {
+    white-space: nowrap; /* Evitar que el texto se envuelva en las celdas */
+  }
+  
+  .tabla-responsive th {
+    width: 100px; /* Ancho fijo para columnas de ID y Fecha Nacimiento */
+    max-width: 150px; /* Ancho máximo para columnas de Nombre, Género, Estado Civil y Ocupación */
+  }
+  
+  .tabla-responsive td:nth-child(7), .tabla-responsive td:nth-child(8), .tabla-responsive td:nth-child(9) {
+    max-width: 300px; /* Ancho máximo para columnas de Dirección, Correo Electrónico y Teléfono */
+  }
+
+  @media (max-width: 768px) {
+    .tabla-responsive th, .tabla-responsive td {
+      white-space: normal; /* Permitir que el texto se envuelva en las celdas para pantallas pequeñas */
+    }
+  
+    .tabla-responsive {
+      overflow-x: auto; /* Permitir desplazamiento horizontal si la tabla es demasiado ancha */
+    }
+  }
+  
+    

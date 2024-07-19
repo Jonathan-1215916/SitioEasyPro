@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRM</title>
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+</head>
+<body>
+     <!--FORMULARIO CONTACTO-->
+    <header class="barra">
+        <div class="contenedor">
+              <!--Barra-->
+            <h1>Administrador de Clientes - EASYPRO</h1>
+        </div>
+    </header>
+
+    <div class="grid contenedor contenido-principal">
+        <aside class="sidebar col-3">
+              <!--Menu lateral-->
+            <h2>Administración</h2>
+            <nav class="navegacion">
+                <a href="leer-clientes.php" class="contactarcliente">Ver lista Clientes</a>
+                <a href="contactar-clientes.html" class="contactarcliente">Contactar Cliente</a>
+                <a href="crear-clientes.html" class="clientes">Ingresar cliente</a>
+                <a href="index.html" class="salir">Salir</a>
+            </nav>
+        </aside>
+
+        <main class="caja-contenido col-9"> 
+              <!--Formulario-->
+            <h2>Contactar cliente</h2>
+
+            <form action="/clientes" method="POST">
+                <form method="POST">
+                   
+                <!--Titulo-->    
+                <legend>Formulario de contacto</legend>
+
+                <div class="campo">
+                      <!--Ingresar correo para mandar msj-->
+                    <form action="ingresar correo" method="post">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                </div>
+                <!--Campo para ingresar correo-->
+                <div class="campo">
+                    <label for="correo_electronico">Correo electrónico del cliente:</label>
+                    <input type="email" id="correo_electronico" name="correo_electronico" placeholder="Correo Electronico" required>
+                </div>
+                <!--Campo para ingresar mensaje-->
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"placeholder="  Mensaje"required></textarea>
+
+                </div>
+                <!--Campo para ingresar nombre del encargado-->
+                <div class="campo">
+                    <label for="nombre">Nombre del encargado:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre del encargado" required>
+                </div>
+            
+                <!--Campo para ingresar el porque se contacta-->
+                <div class="campo">
+                    <label for="asunto">¿Porque te contactamos?:</label>
+                    <select id="asunto" name="asunto">
+                      <option value="soporte_tecnico">Informacion relevante</option>
+                      <option value="comentarios_generales">Comentarios generales</option>
+                  
+                </div>
+            </select>
+            <!--Boton enviar-->
+            <div class="enviar">
+                <input type="submit" class="btn btn-verde" value="Enviar mensaje">
+            
+        </div>
+
+            </form>
+
+        </main>
+    </div>
+    
+</body>
+</html>
