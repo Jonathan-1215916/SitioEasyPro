@@ -15,7 +15,7 @@ include ("conexion-mostrar.php")
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/estilos.css">
-    <link rel="stylesheet" href="/CSStabla.css">
+    <link rel="stylesheet" href="/CSS/tabla.css">
 </head>
 <body>
     <?php
